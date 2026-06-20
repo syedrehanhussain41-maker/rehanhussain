@@ -1,0 +1,17 @@
+print("================================")
+print("   SYED AFZAAL HUSSAIN ")
+print("================================")
+
+answers = {
+    "name": "My father's name is Syed Afzaal Hussain.",
+    "profession": "My father is a Farmer.",
+    "age": "My father is 55 years old."
+}
+
+while True:
+    user = input("You (type exit to quit): ").lower()
+
+    print("Bot:", answers.get(user, "Sorry, I only know name, profession, and age."))
+
+    if user == "exit":
+        quit()
